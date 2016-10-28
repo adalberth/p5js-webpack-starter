@@ -1,12 +1,12 @@
 {
-  "name": "dataforgood",
+  "name": "p5jswebpackstarter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack-dev-server --progress --colors --inline",
-    "prod": "webpack -p"
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server",
+    "build": "cross-env NODE_ENV=prod webpack -p"
   },
   "author": "David Adalberth Andersen <david@stupid-studio.com> (http://stupid-studio.com)",
   "license": "ISC",
@@ -15,7 +15,14 @@
     "babel-loader": "^6.2.5",
     "babel-plugin-transform-object-rest-spread": "^6.8.0",
     "babel-preset-es2015": "^6.14.0",
-    "webpack": "^1.13.2"
+    "cross-env": "^3.1.3",
+    "css-loader": "^0.25.0",
+    "html-webpack-plugin": "^2.24.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-ext-html-webpack-plugin": "^2.0.5",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.3"
   },
   "dependencies": {
     "p5": "^0.5.3"
